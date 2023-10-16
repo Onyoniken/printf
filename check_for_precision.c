@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * get_precision - Calculates the precision for printing
- * @format: Formatted string in which to print the arguments
- * @i: List of arguments to be printed.
- * @list: list of arguments.
+ * check_for_precision - main function
+ * @format: param 1
+ * @i: param 2
+ * @list: param 3
  *
  * Return: Precision.
  */
-int get_precision(const char *format, int *i, va_list list)
+int check_for_precision(const char *format, int *i, va_list list)
 {
 	int curr_i = *i + 1;
 	int precision = -1;
-	int is_digit = 0;
+
 	if (format[curr_i] != '.')
 		return (precision);
 
