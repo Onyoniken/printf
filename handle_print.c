@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * handling_print - main function
+ * handle_print - main function
  * @fmt: parameter 1
  * @list: parameter 2
  * @ind: parameter 3
@@ -11,7 +11,7 @@
  * @size: parameter 8
  * Return: 1 or 2;
  */
-int handling_print(const char *fmt, int *ind, va_list list, char buffer[],
+int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	int i, unknow_len = 0, printed_chars = -1;
